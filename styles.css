@@ -91,3 +91,6 @@ footer p { margin: 0; }
 .profile-header h1 {
   margin: 0;
 }
+#about p {
+  text-align: justify;
+}
