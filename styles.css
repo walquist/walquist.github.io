@@ -85,12 +85,14 @@ footer p { margin: 0; }
 .profile-photo {
   width: 80px;
   height: 80px;
+  margin-top: 30px;
   object-fit: cover;
   object-position: center 20%;
   border-radius: 50%;
 }
 
 .profile-header h1 {
+  
   margin: 0;
 }
 #about p {
