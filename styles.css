@@ -102,3 +102,8 @@ footer p { margin: 0; }
   margin-bottom: 16px;
   line-height: 1.6;
 }
+/* Add space between publications */
+#publications p {
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
