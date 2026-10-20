@@ -18,9 +18,10 @@ body {
 }
 
 .page {
-  max-width: 1100px;
+  max-width: 850px;
   width: 90%;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 header {
@@ -137,9 +138,4 @@ section h2 {
   line-height: 1.6;
 }
 
-/* Keep section headings distinct */
-#publications h2,
-#teaching h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
+
