@@ -1,0 +1,74 @@
+/* Simple, text-first academic homepage */
+:root {
+  --text: #222;
+  --muted: #555;
+  --link: #245b8f;
+  --rule: #e5e5e5;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.page {
+  width: min(700px, calc(100% - 40px));
+  margin: 54px auto 72px;
+}
+
+header {
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--rule);
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 2.2rem;
+  font-weight: normal;
+  letter-spacing: -0.03em;
+}
+
+header p {
+  margin: 5px 0;
+  color: var(--muted);
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover { text-decoration: none; }
+
+section {
+  padding: 22px 0 18px;
+  border-bottom: 1px solid var(--rule);
+}
+
+h2 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+section p { margin: 0; }
+
+footer {
+  padding-top: 20px;
+  font-size: .95rem;
+}
+
+footer p { margin: 0; }
+
+@media (max-width: 500px) {
+  .page { margin-top: 32px; }
+  h1 { font-size: 1.9rem; }
+  body { font-size: 16px; }
+}
