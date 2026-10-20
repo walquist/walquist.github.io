@@ -1,3 +1,4 @@
+
 /* Simple, text-first academic homepage */
 :root {
   --text: #222;
@@ -6,11 +7,8 @@
   --rule: #e5e5e5;
 }
 
-* { box-sizing: border-box; }
-.page {
-  width: 85%;
-  max-width: 800px;
-  margin: 40px auto 0;
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -22,10 +20,20 @@ body {
   line-height: 1.65;
 }
 
+/* Center the entire website and limit its width */
+.intro {
+  width: 90%;
+  max-width: 800px;
+  margin: 50px auto 0;
+}
 
+/* Keep content inside the main container */
+.intro-content {
+  width: 100%;
+  min-width: 0;
+}
 
-
-
+/* Header */
 header {
   padding-bottom: 25px;
   border-bottom: 1px solid var(--rule);
@@ -43,41 +51,48 @@ header p {
   color: var(--muted);
 }
 
+/* Links */
 a {
   color: var(--link);
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
-a:hover { text-decoration: none; }
+a:hover {
+  text-decoration: none;
+}
 
+/* Sections */
 section {
+  width: 100%;
   padding: 22px 0 18px;
   border-bottom: 1px solid var(--rule);
 }
 
 h2 {
-  margin: 0 0 8px;
-  font-size: 1.25rem;
+  margin: 0 0 20px;
+  font-size: 30px;
   font-weight: normal;
 }
 
-section p { margin: 0; }
-
-footer {
-  padding-top: 20px;
-  font-size: .95rem;
+section p {
+  margin: 0;
 }
 
-footer p { margin: 0; }
-
-@media (max-width: 500px) {
-  .page { margin-top: 32px; }
-  h1 { font-size: 1.9rem; }
-  body { font-size: 16px; }
+/* About text */
+#about p {
+  text-align: justify;
+  margin-bottom: 16px;
+  line-height: 1.6;
 }
 
-/* Profile picture beside name */
+/* Publications */
+#publications p {
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+/* Profile picture */
 .profile-photo {
   width: 80px;
   height: 80px;
@@ -86,6 +101,7 @@ footer p { margin: 0; }
   border-radius: 50%;
 }
 
+/* Profile header, if used in your HTML */
 .profile-header {
   display: flex;
   align-items: center;
@@ -95,55 +111,31 @@ footer p { margin: 0; }
 }
 
 .profile-header h1 {
-  
   margin: 0;
 }
-#about p {
-  text-align: justify;
+
+/* Footer */
+footer {
+  padding-top: 20px;
+  font-size: 0.95rem;
 }
 
-#about p {
-  text-align: justify;
-  margin-bottom: 16px;
-  line-height: 1.6;
-}
-/* Add space between publications */
-#publications p {
-  margin-bottom: 24px;
-  line-height: 1.6;
+footer p {
+  margin: 0;
 }
 
-/* Make section titles bigger */
-section h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
+/* Mobile layout */
+@media (max-width: 500px) {
+  .intro {
+    width: 90%;
+    margin-top: 32px;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  body {
+    font-size: 16px;
+  }
 }
-
-
-
-
-/* Make all sections align with the page */
-#about,
-#publications,
-#teaching {
-  width: 100%;
-  max-width: none;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-/* Separate individual publications */
-#publications p {
-  margin-bottom: 24px;
-  line-height: 1.6;
-}
-
-/* Keep section headings distinct */
-#publications h2,
-#teaching h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-
-
