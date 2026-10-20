@@ -115,13 +115,7 @@ section h2 {
 }
 
 
-/* Keep the entire website centered and readable */
-.page {
-  width: 90%;
-  max-width: 1100px;
-  margin: 40px auto 0;
-  box-sizing: border-box;
-}
+
 
 /* Make all sections align with the page */
 #about,
