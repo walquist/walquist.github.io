@@ -17,12 +17,15 @@ body {
   line-height: 1.65;
 }
 
+
+/* Center the website and limit its width */
 .page {
-  width: 85%;
+  width: 90%;
   max-width: 850px;
   margin: 40px auto 0;
   box-sizing: border-box;
 }
+
 
 header {
   padding-bottom: 25px;
