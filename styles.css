@@ -72,3 +72,22 @@ footer p { margin: 0; }
   h1 { font-size: 1.9rem; }
   body { font-size: 16px; }
 }
+
+/* Profile picture beside name */
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.profile-photo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-header h1 {
+  margin: 0;
+}
