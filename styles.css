@@ -107,3 +107,9 @@ footer p { margin: 0; }
   margin-bottom: 24px;
   line-height: 1.6;
 }
+
+/* Make section titles bigger */
+section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
