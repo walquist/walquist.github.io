@@ -94,3 +94,9 @@ footer p { margin: 0; }
 #about p {
   text-align: justify;
 }
+
+#about p {
+  text-align: justify;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
