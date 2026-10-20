@@ -18,9 +18,9 @@ body {
 }
 
 .page {
-  max-width: 850px;
   width: 90%;
-  margin: 0 auto;
+  max-width: 1100px;
+  margin: 40px auto 0;
   box-sizing: border-box;
 }
 
@@ -117,19 +117,23 @@ section h2 {
   margin-bottom: 20px;
 }
 
-/* Keep the main website centered and readable */
+
+/* Keep the entire website centered and readable */
 .page {
-  max-width: 1100px;
   width: 90%;
-  margin: 0 auto;
+  max-width: 1100px;
+  margin: 40px auto 0;
   box-sizing: border-box;
 }
 
-/* Keep Publications and Teaching from feeling stretched */
+/* Make all sections align with the page */
+#about,
 #publications,
 #teaching {
-  max-width: 850px;
-  margin-top: 40px;
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* Separate individual publications */
@@ -137,5 +141,13 @@ section h2 {
   margin-bottom: 24px;
   line-height: 1.6;
 }
+
+/* Keep section headings distinct */
+#publications h2,
+#teaching h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
 
 
