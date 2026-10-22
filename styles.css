@@ -139,3 +139,24 @@ footer p {
     font-size: 16px;
   }
 }
+
+
+.dropdown-heading {
+  display: inline;
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+summary {
+  cursor: pointer;
+}
+
+.project {
+  margin-top: 16px;
+  margin-left: 20px;
+}
+
+.project p {
+  margin-top: 10px;
+}
+
