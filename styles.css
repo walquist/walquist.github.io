@@ -176,12 +176,19 @@ summary {
 
 
 
+
+/* Make psychology figures wider and preserve all content */
+.project-content:has(.psychology-images) {
+  width: calc(100% + 200px);
+  max-width: calc(90vw - 40px);
+}
+
 .psychology-images {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  margin: 24px 0;
+  gap: 28px;
   width: 100%;
+  margin: 24px 0;
 }
 
 .psychology-images img {
@@ -190,12 +197,13 @@ summary {
   height: auto;
   max-width: 100%;
   object-fit: contain;
-  object-position: center bottom;
 }
 
-/* Mobile */
-@media (max-width: 500px) {
-  .psychology-images {
-    gap: 16px;
+@media (max-width: 700px) {
+  .project-content:has(.psychology-images) {
+    width: 100%;
+    max-width: 100%;
   }
+}
+
 }
