@@ -243,3 +243,18 @@ footer p {
     height: 180px;
   }
 }
+
+.intro-interests {
+  margin: 12px 0 20px;
+  padding-left: 24px;
+  line-height: 1.7;
+}
+
+.intro-interests li {
+  padding-left: 4px;
+  margin-bottom: 4px;
+}
+
+.intro-interests li::marker {
+  color: #245b8f;
+}
