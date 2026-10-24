@@ -175,30 +175,27 @@ summary {
 }
 
 
+
 .psychology-images {
   display: flex;
-  gap: 16px;
-  margin: 20px 0;
-  align-items: flex-end;
+  flex-direction: column;
+  gap: 24px;
+  margin: 24px 0;
+  width: 100%;
 }
 
 .psychology-images img {
   display: block;
-  width: calc((100% - 32px) / 3);
+  width: 100%;
   height: auto;
-  max-height: none;
+  max-width: 100%;
   object-fit: contain;
   object-position: center bottom;
-  align-self: flex-end;
 }
 
+/* Mobile */
 @media (max-width: 500px) {
   .psychology-images {
-    gap: 8px;
-  }
-
-  .psychology-images img {
-    width: calc((100% - 16px) / 3);
-    height: auto;
+    gap: 16px;
   }
 }
